@@ -1,0 +1,1 @@
+//crear una funcion recursiva que basado en un array de notas, te muestre el promedio
