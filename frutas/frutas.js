@@ -3,6 +3,7 @@
 
 let frutas = ["uva","melon", "tomate", "cambur", "pina"];
 
+
 function imprimir_array(lista = [], numero = 0){
   if(numero < lista.length){
     console.log(lista[numero]);
@@ -10,6 +11,6 @@ function imprimir_array(lista = [], numero = 0){
   }
 }
 
-imprimir_array(frutas);
+imprimir_array(frutas, 2);
 
 
