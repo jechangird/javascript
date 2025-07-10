@@ -29,26 +29,27 @@ console.log(contar_palabras("     hola a todos en la clase !  "));
 
 //2. Crea una función que reciba un string y cuente cuantas vocales tiene
 function contar_vocales(texto) {
-  contador= 0;
-  for (let letra of texto.toLowerCase()){
-    if ("aeiouAEIOU".includes(letra)){
+  contador = 0;
+  for (let letra of texto.toLowerCase()) {
+    if ("aeiouáéíóú".includes(letra)) {
       contador++;
     }
   }
   return contador;
-})
+}
 
-console.log(contar_vocales("este es una prueba de contar vocales"));
+console.log(contar_vocales("Este mensaje es Supercalifragilisticoexpialidoso"));
 
  //3. Crea una función que reciba un string y retorne el string al revés.
- function invertir_palabra(texto){
+function invertir_texto(texto) {
   let palabraInvertida = "";
-  for(let i = texto.lenght -1; i >= 0; i-- ){
+  for (let i = texto.length - 1; i >= 0; i--) {
     palabraInvertida += texto[i];
+    //palabraInvertida = palabraInvertida + texto[i]
   }
   return palabraInvertida;
- }
+}
 
- console.log(invertir_texto("yo soy tu padre"))
+console.log(invertir_texto("Yo soy tu padre"));
 
 
