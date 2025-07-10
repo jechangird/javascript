@@ -82,20 +82,22 @@ for(let i = 1; i <=20; i++){
 
 // Ejercicio
 // Recorrer un arreglo de arreglos y sumar sus elementos
-const numeros = [
+const numerosx = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
 ];
 
-let suma = 0;
-for (let i = 0; i < numeros.length; i++) {
-  for (let j = 0; j < 3; j++) {
-    console.log(numeros[i][j]);//suma=suma+
+let sumax = 0;
+for (let i = 0; i < numerosx.length; i++) {
+  for (let j = 0; j < numerosx[i].length; j++) {
+    sumax += numerosx[i][j];
+
   }
 }
+console.log("La suma de todos los números es: " + sumax); // Usamos i para identificar la fila
 
-/ Ejercicio
+// Ejercicio
 // Recorrer un arreglo de arreglos (matriz) y sumar sus elementos
 const numeros = [
   [1, 2, 3, 0],
