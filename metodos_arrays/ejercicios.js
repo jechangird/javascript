@@ -9,7 +9,7 @@
   Si no contiene ninguna, retorna el texto original.*/
 
 let malasPalabras = ["tonto", "chispas", "recorcholis", "rayos", "caracoles", "cielos" ];
-let texto = "En la fiesta habra bombones con chispas de chocolate, seria un tonto si no asistiera";
+let texto = "En la fiesta del tonto habra bombones con chispas de chocolate, seria un tonto si no asistiera";
 let i = 0;
 
 function palabras(texto){
@@ -22,7 +22,7 @@ function palabras(texto){
     else {
       //console.log(`La palabra "${malasPalabras[i]}" no se encuentra en el texto.`);
       console.log("La palabra "+ palabrota +" no se encuentra en el texto.");
-      i++;
+      //i++;
     }
   }return console.log(texto);
 }
