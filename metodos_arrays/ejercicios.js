@@ -60,5 +60,17 @@ console.log("Españoles Masculinos: ", espanolesMasculinos);
 
 
 
+/*Ejercicio #6
+Crear una función multiplicarArreglo() que tome como parámetro un arreglo de números, retornar 
+la multiplicación del número menor del arreglo y el número mayor del arreglo.*/
 
+var  numeros = [1,2,3,4,5,6,7,8,9,0];
 
+function multiplicarArreglo(numeros){
+  let minimo = Math.min(...numeros);
+  let maximo = Math.max(...numeros);
+  console.log("el minimo es : " + minimo + " y el maximo es: " + maximo);
+
+}
+
+multiplicarArreglo(numeros);
