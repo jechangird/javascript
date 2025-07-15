@@ -17,12 +17,14 @@ function palabras(texto){
     if (texto.includes(palabrota)) {
       console.log("Mala Palabra: " + palabrota);
       texto=texto.replaceAll(palabrota,"****");
-      //i++;
+      // otra opcion
+      //texto = texto.toLowerCase().replaceAll(palabra, "*".repeat(palabra.length));
+
     } 
     else {
       //console.log(`La palabra "${malasPalabras[i]}" no se encuentra en el texto.`);
       console.log("La palabra "+ palabrota +" no se encuentra en el texto.");
-      //i++;
+
     }
   }return console.log(texto);
 }
