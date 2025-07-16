@@ -10,14 +10,14 @@ class Personajes {
     }
     //metodo atacar
     atacar(){
-        console.log(´${this.nombre} esta atacando´);
+        console.log(`${this.nombre} esta atacando`);
 
 
     }
 
     //metodo saludar
     saludar(){
-         console.log(´$ Hola, soy{this.nombre}´);
+        console.log(`$ Hola, soy{this.nombre}`);
     }
 }
 
