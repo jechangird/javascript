@@ -64,6 +64,7 @@ class Arquero extends Personajes {
 }
 
 let jose = new Guerrero("jose", 5, 3, 8, 100);
+console.log(jose.constructor.name)
 jose.saludar();
 jose.atacar_con_armas();
 
