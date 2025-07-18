@@ -35,7 +35,7 @@ class Disenador extends Empleados{
       this.cantidad_horas_extras = cantidad_horas_extras;
   }
   presentar_disenador(){
-    return `Nombre: ${this.nombre}, Diseñador, Salario: ${this.salario} `;
+    return `Nombre: ${this.nombre}, ${this.apellido} Diseñador, Salario: ${this.salario} Tenologias utilizadas; ${this.tecnologias}`;
   }
 
   calcular_salario(){
@@ -73,6 +73,7 @@ const empleado1 = new Disenador("José Elias", "Changir D.");
 console.log(empleado1.presentar_disenador());
 empleado1.cantidad_horas_extras = 2;
 console.log(empleado1.calcular_salario());
+//comsole.log(empleado1.tecnologias);
 
 const empleado2 = new Desarrollador("Clara", "Lopez");
 console.log(empleado2.presentar_desarrollador());
