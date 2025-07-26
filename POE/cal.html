@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div
+      class="max-w-sm mx-auto mt-10 p-4 bg-white rounded shadow text-center space-y-4"
+    >
+      <h2 class="text-xl font-bold">Calculadora Básica</h2>
+
+      <input
+        type="number"
+        id="num1"
+        placeholder="Primer número"
+        class="w-full p-2 border rounded"
+      />
+      <input
+        type="number"
+        id="num2"
+        placeholder="Segundo número"
+        class="w-full p-2 border rounded"
+      />
+
+      <div class="grid grid-cols-4 gap-2">
+        <button class="btn">+</button>
+        <button class="btn">-</button>
+        <button class="btn">*</button>
+        <button class="btn">/</button>
+      </div>
+
+      <p id="resultado" class="text-lg font-semibold text-gray-700"></p>
+    </div>
+    <script src="cal.js"></script>
+  </body>
+</html>

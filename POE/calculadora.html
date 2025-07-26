@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora-POE</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Calculadora</h1>
-    <form>
-      
-    </form>
-
-
-
-
-    <form action="#" id="CalculadoraForm" class="form">
+    <div>
       <label for="numero1">Número 1:</label>
-      <input type="text" id="numeroUno" placeholder="Ingresa el primer número" />
+      <input
+        type="number"
+        id="numeroUno"
+        placeholder="Ingresa el primer número"
+      />
 
       <label for="numero2">Número 2:</label>
-      <input type="text" id="numeroDos" placeholder="Ingresa el segundo número" />
+      <input
+        type="number"
+        id="numeroDos"
+        placeholder="Ingresa el segundo número"
+      />
 
       <label for="resultado">Resultado:</label>
-      <input type="text" id="resultado" />
+      <input type="number" id="resultado" />
+    </div>
 
-      <div>
-        <button type="button" id="clearFormBtn">Limpiar</button>
-        <button type="submit" id="submitFormBtn">Enviar</button>
-      </div>
-      <div>
-        <button type="button" id="fillFormBtn">Autocompletar</button>
-      </div>
-    </form>
+    <div>
+      <button type="button" id="suma">+</button>
+      <button type="button" id="resta">-</button>
+      <button type="button" id="multiplicacion">*</button>
+      <button type="button" id="division">/</button>
+      <button type="button" id="limpiar">C</button>
+      <button type="submit" id="total">=</button>
+    </div>
 
     <script src="calculadora.js"></script>
-
-    
-</body>
+  </body>
 </html>

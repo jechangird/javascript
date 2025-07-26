@@ -23,6 +23,16 @@ const addItemBtn = document.querySelector("#addItemBtn");
 const toggleClassBtn = document.querySelector("#toggleClassBtn");
 const itemList = document.querySelector("#itemList");
 
+const alertBtn = document.querySelector("#alertBtn");
+const promptBtn = document.querySelector("#promptBtn");
+
+const userForm = document.querySelector("#userForm");
+const nameInput = document.querySelector("#nameInput");
+const emailInput = document.querySelector("#emailInput");
+const submitFormBtn = document.querySelector("#submitFormBtn");
+const clearFormBtn = document.querySelector("#clearFormBtn");
+const fillFormBtn = document.querySelector("#fillFormBtn");
+
 /**
  * Event listeners:
  *
