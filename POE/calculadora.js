@@ -17,3 +17,4 @@ btnLimpiar.addEventListener("click", () => {
   resultado.value = 0.00;
   
 });
+
