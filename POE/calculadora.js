@@ -33,7 +33,7 @@ botones.forEach(boton => {
         case "+": total = n1 + n2; break;
         case "-": total = n1 - n2; break;
         case "*": total = n1 * n2; break;
-        case "/": 
+        case "/": total = n1 / n2; break;
           total = n2 !== 0 ? n1 / n2 : "❌ Error: división por cero"; 
           break;
       }
