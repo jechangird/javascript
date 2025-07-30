@@ -20,13 +20,15 @@ let nombre = "Juan Pérez";
   \w   -> Caracteres alfanuméricos (letras, números y guiones bajos)
   \s   -> Espacios en blanco
   \D   -> No dígitos
-  \W   -> No caracteres alfanuméricos
+  \W   -> No caracteres alfanuméricos\w
+  
   \S   -> No espacios en blanco
   .    -> Cualquier carácter excepto saltos de línea
   |    -> Alternativa (OR)
   modificadores:
   g    -> Búsqueda global (todas las coincidencias)
   i   -> Ignorar mayúsculas y minúsculas
+
 */
 let regexNombre = /^[A-Za-záéíóúÁÉÍÓÚ]+ [A-Za-záéíóúÁÉÍÓÚ]+$/
 let nombre1 = "Juan Pérez Ródríguez";
