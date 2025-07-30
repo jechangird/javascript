@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Piedra, Papel o Tijera</title>
+  <script defer src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
+  <h1 class="text-3xl font-bold mb-4">Piedra, Papel o Tijera 🪨📄✂️</h1>
+
+  <div class="flex gap-4 mb-6">
+    <button class="choice bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded" data-choice="piedra">Piedra</button>
+    <button class="choice bg-green-600 hover:bg-green-700 px-4 py-2 rounded" data-choice="papel">Papel</button>
+    <button class="choice bg-red-600 hover:bg-red-700 px-4 py-2 rounded" data-choice="tijera">Tijera</button>
+  </div>
+
+  <div class="mb-4">
+    <p class="text-lg">Jugador: <span id="player-score">0</span> | CPU: <span id="cpu-score">0</span> | Empates: <span id="ties">0</span></p>
+  </div>
+
+  <div>
+    <h2 class="text-xl mb-2">Historial (últimas 5 partidas):</h2>
+    <ul id="history" class="list-disc list-inside text-sm"></ul>
+  </div>
+  <script src="./piedra_papel_tijera.js"></script>
+</body>
+</html>
