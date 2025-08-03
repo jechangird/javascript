@@ -1,4 +1,4 @@
- const choices = ["piedra", "papel", "tijera"];
+const choices = ["piedra", "papel", "tijera"];
 const buttons = document.querySelectorAll(".choice");
 
 let playerScore = 0;
