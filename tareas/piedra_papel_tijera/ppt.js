@@ -1,5 +1,5 @@
 const valores = ["piedra", "papel", "tijera"];
-const botones = document.querySelectorAll(".eleccion");
+const botones = document.querySelectorAll(".elecciones");
 
 let puntosJugador = 0;
 let puntosComputador = 0;
@@ -7,7 +7,7 @@ let empate = 0;
 let historial = [];
 
 const resultadoJugador = document.getElementById("resultado-jugador");
-const resultadoCpu = document.getElementById("resultado-computador");
+const resultadoComputador = document.getElementById("resultado-computador");
 const resultadoEmpate = document.getElementById("empate");
 const resultadoHistorial = document.getElementById("historial");
 
@@ -15,14 +15,20 @@ botones.forEach(btn => {
   btn.addEventListener("click", () => {
     const eleccionJugador = btn.dataset.eleccion;
     const eleccionComputador = valores[Math.floor(Math.random() * 3)];
-    const resultado = getResult(eleccionJugador, eleccionComputador);
+    //alert(`Tú elegiste ${eleccionJugador}, la PC eligió ${eleccionComputador} `);
+    //alert(`jugador $(eleccionJugador)`);
+    //let mensaje = `Tú elegiste ${eleccionJugador}, la PC eligió ${eleccionComputador}. `;
 
-    updateScores(resultado);
-    updateHistory(eleccionJugador, eleccionComputador, resultado);
+    
+
+    const resultado = resultado(eleccionJugador, eleccionComputador);
+
+    actualizarPuntuacion(resultado);
+    actualizarHistorial(eleccionJugador, eleccionComputador, resultado);
   });
 });
 
-function getResult(jugador, computador) {
+function resultado(jugador, computador) {
   if (jugador === computador) return "Empate";
   if (
     (jugador === "piedra" && computador === "tijera") ||
@@ -32,17 +38,21 @@ function getResult(jugador, computador) {
   return "Computador";
 }
 
-function updateScores(resultado) {
+function actualizarPuntuacion(resultado) {
   if (resultado === "Jugador") puntosJugador++;
   else if (resultado === "Computador") puntosComputador++;
   else empate++;
 
-  resultadoJugador.textContent = puntosJugador;
+  /*resultadoJugador.textContent = puntosJugador;
   resultadoComputador.textContent = puntosComputador;
-  resultadoEmpate.textContent = empate;
+  resultadoEmpate.textContent = empate;*/
+  resultado-jugador.textContent === puntosJugador;
+  resultado-omputador.textContent === puntosComputador;
+  resultado-empate.textContent === empate;
 }
 
-function updateHistory(jugador, computador, resultado) {
+function actualizarHistorial(jugador, computador, resultado) {
+  //const round = `Tú: ${jugador} | CPU: ${computador} → Resultado: ${resultado}`;
   const round = `Tú: ${jugador} | CPU: ${computador} → Resultado: ${resultado}`;
   historial.unshift(round);
   if (historial.length > 5) historial.pop();
