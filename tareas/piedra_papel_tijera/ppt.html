@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ppt</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
@@ -12,13 +12,17 @@
     <button class="elecciones bg-red-600 hover:bg-red-700 px-4 py-2 rounded cursor-pointer" data-eleccion="piedra">piedra</button>
     <button class="elecciones bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded cursor-pointer" data-eleccion="papel">papel</button>
     <button class="elecciones bg-green-600 hover:bg-green-700 px-4 py-2 rounded cursor-pointer" data-eleccion="tijera">tijera</button>
+    <button id="reset" class="mt-6 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded">Reiniciar marcador</button>
   </div>
-  <br>
+  
+  <div>
+    <div id="mensajeResultado" class="text-2xl font-semibold mt-4 transition-all duration-300"></div>
+  </div>
   <div class="font-bold">
     <p  class="text-xl  ">... Estadisticas ...</p>
     <br>
-    <p id ="resultado-jugador" >jugador:</p>
-    <p id ="resultado-computador">computador:</p>
+    <p id ="resultadoJugador" >jugador:</p>
+    <p id ="resultadoCcomputador">computador:</p>
     <p id ="empate">empate:</p>
   </div>
   <div>
@@ -26,7 +30,8 @@
     <h2 class="text-xl mb-2">Historial (últimas 5 partidas):</h2>
     <ul id="historial" class="list-disc list-inside text-sm"></ul>
   </div>
-  <script src="./ppt.js"></script>
+  
+  <script src="./ppt1.js"></script>
 </body>
 
 </html>

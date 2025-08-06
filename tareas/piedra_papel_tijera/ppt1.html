@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, Papel o Tijera</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4"
+  >
+    <h1 class="text-4xl font-bold mb-6 border border-white px-6 py-4">
+      * Piedra, Papel o Tijera *
+    </h1>
+
+    <div class="flex gap-4 mb-6 font-semibold">
+      <button
+        class="elecciones bg-red-600 hover:bg-red-700 px-4 py-2 rounded cursor-pointer"
+        data-eleccion="piedra"
+      >
+        Petra
+      </button>
+      <button
+        class="elecciones bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded cursor-pointer"
+        data-eleccion="papel"
+      >
+        Papiro
+      </button>
+      <button
+        class="elecciones bg-green-600 hover:bg-green-700 px-4 py-2 rounded cursor-pointer"
+        data-eleccion="tijera"
+      >
+        Tereja
+      </button>
+      <button
+        id="reset"
+        class="mt-6 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded"
+      >
+        Reiniciar marcador
+      </button>
+    </div>
+    <div>
+      <div
+        id="mensajeResultado"
+        class="text-2xl font-semibold mt-4 transition-all duration-300"
+      ></div>
+    </div>
+
+    <div class="font-bold text-xl text-center">
+      <p class="mb-2">... Estadísticas ...</p>
+      <p id="resultadoJugador">jugador:</p>
+      <p id="resultadoComputador">computador:</p>
+      <p id="empate">empate:</p>
+    </div>
+
+    <div class="mt-6">
+      <h2 class="text-xl mb-2">Historial (últimas 5 partidas):</h2>
+      <ul id="historial" class="list-disc list-inside text-sm"></ul>
+    </div>
+
+    <script src="./ppt1.js"></script>
+  </body>
+</html>

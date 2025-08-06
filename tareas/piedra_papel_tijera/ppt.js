@@ -18,12 +18,14 @@ botones.forEach(btn => {
     //alert(`Tú elegiste ${eleccionJugador}, la PC eligió ${eleccionComputador} `);
     //alert(`jugador $(eleccionJugador)`);
     //let mensaje = `Tú elegiste ${eleccionJugador}, la PC eligió ${eleccionComputador}. `;
-
+    
+    const resultadoJuego = resultado(eleccionJugador, eleccionComputador);
+    alert(`Tú elegiste ${eleccionJugador}, la PC eligió ${eleccionComputador} - Gano ${resultadoJuego} `);
     
 
-    const resultado = resultado(eleccionJugador, eleccionComputador);
+    actualizarPuntuacion(resultadoJuego);
+    alert(`Jugador ${puntosJugador}, la PC ${puntosComputador} - Empates ${empate} `);
 
-    actualizarPuntuacion(resultado);
     actualizarHistorial(eleccionJugador, eleccionComputador, resultado);
   });
 });
@@ -38,22 +40,21 @@ function resultado(jugador, computador) {
   return "Computador";
 }
 
-function actualizarPuntuacion(resultado) {
-  if (resultado === "Jugador") puntosJugador++;
-  else if (resultado === "Computador") puntosComputador++;
+function actualizarPuntuacion(resultadoJuego) {
+  if (resultadoJuego === "Jugador") puntosJugador++;
+  else if (resultadoJuego === "Computador") puntosComputador++;
   else empate++;
 
-  /*resultadoJugador.textContent = puntosJugador;
+  resultadoJugador.textContent = puntosJugador;
   resultadoComputador.textContent = puntosComputador;
-  resultadoEmpate.textContent = empate;*/
-  resultado-jugador.textContent === puntosJugador;
-  resultado-omputador.textContent === puntosComputador;
-  resultado-empate.textContent === empate;
+  resultadoEmpate.textContent = empate;
 }
 
-function actualizarHistorial(jugador, computador, resultado) {
+
+
+function actualizarHistorial(jugador, computador, resultadoJuego) {
   //const round = `Tú: ${jugador} | CPU: ${computador} → Resultado: ${resultado}`;
-  const round = `Tú: ${jugador} | CPU: ${computador} → Resultado: ${resultado}`;
+  const round = `Tú: ${jugador} | CPU: ${computador} → Resultado: ${resultadoJuego}`;
   historial.unshift(round);
   if (historial.length > 5) historial.pop();
 
